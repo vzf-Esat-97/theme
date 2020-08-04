@@ -1,0 +1,18 @@
+// element 树形控件
+@import "../var.less";
+.el-tree {
+  background: @color-background-2; // element 树形控件整体背景颜色
+  .el-tree-node__content {
+    color: @color-1; // element 树形控件字体颜色
+  }
+  .el-tree-node__content:hover {
+    background: @color-background-4; // element 树形控件单行hover背景颜色
+  }
+  .el-tree-node:focus>.el-tree-node__content {
+    background: @color-background-4; // element focus背景颜色
+  }
+}
+
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background: @color-background-5; // element 树形控件单行选中背景颜色
+}

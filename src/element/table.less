@@ -1,0 +1,53 @@
+// element table表格
+@import "../var.less";
+.el-table {
+  td {
+    color: @color-1;
+  }
+  background: @color-background-2;
+  tr {
+    background: @color-background-2;
+    color: @color-1;
+  }
+  thead th {
+    background: @color-background-2 !important;
+  }
+  .el-table__body {
+    tr.hover-row>td {
+      background: @color-background-4;
+      .item-input .el-input__inner {
+        background: @color-background-4;
+      }
+    }
+    tr.current-row>td {
+      background: @color-background-5;
+      .item-input .el-input__inner {
+        background: @color-background-5;
+      }
+    }
+  }
+}
+
+.el-table::before {
+  width: 0;
+  height: 0;
+}
+
+.el-table--border {
+  border-left: 1px solid @border-1;
+  border-top: 1px solid @border-1;
+  th,
+  td {
+    border-right: 1px solid @border-1;
+    border-bottom: 1px solid @border-1 !important;
+  }
+}
+
+.el-table--border::after {
+  width: 0;
+  height: 0;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background: @color-background-4;
+}
